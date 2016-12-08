@@ -1,7 +1,7 @@
 'use strict';
 function Thermostat() {
 
-  this.temp = null;
+  this.temp = 0;
   this.minimumTemp = 10;
   this.powerSaving = true;
   this.maximumTemp = 25
@@ -18,6 +18,7 @@ Thermostat.prototype.increaseTemp = function() {
   }
   else {
     this.temp++;
+    return this.temp;
   };
 
 };

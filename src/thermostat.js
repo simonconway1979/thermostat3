@@ -1,7 +1,7 @@
 'use strict';
 function Thermostat() {
 
-  this.temp = 0;
+  this.temp = 20;
   this.minimumTemp = 10;
   this.powerSaving = true;
   this.maximumTemp = 25

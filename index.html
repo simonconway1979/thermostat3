@@ -2,11 +2,16 @@
 <html>
   <head>
     <title>Thermostat</title>
+    <style>
+  a.test {
+      font-size: bold;
+  }
+</style>
   </head>
 
   <body>
     <section>
-    <h1 id= 'temperature'></h1>
+    <h1 id='temperature'></h1>
        <input type="number" id="startTemp">
        <button id="increaseTemp">Increase Temperature</button>
        <button id="decreaseTemp">Decrease Temperature</button>
@@ -17,5 +22,22 @@
        <button id="energyUsage">Energy Usage</button>
      </section>
      <script src="src/thermostat.js"></script>
+     <a href="http://jquery.com/">Log out</a>
+     <script src="jquery.js"></script>
+     <script>
+     $( document ).ready(function() {
+
+       $( "a" ).addClass("test");
+
+       $( "a" ).click(function( event ) {
+
+     alert( "As you can see, the link no longer took you to jquery.com" );
+
+     event.preventDefault();
+
+ });
+
+});
+     </script>
   </body>
 </html>

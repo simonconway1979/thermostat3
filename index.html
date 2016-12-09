@@ -18,9 +18,10 @@
   <body>
     <section>
       <h1>Current temperature: <span id="current-temperature">20</span></h1>
-      <form id="select-city">
-        <input id="current-city" type="text" placeholder="Enter a city"></input>
+      <form action="/city" method="post" id="select-city">
+        <input name="city" id="current-city" type="text" placeholder="Enter a city"></input>
         <input type="submit"></input>
+      </form>
     </section>
     <section>
     <h1 id='temperature'></h1>
@@ -28,10 +29,9 @@
        <button id="increaseTemp">Increase Temperature</button>
        <button id="decreaseTemp">Decrease Temperature</button>
        <button id="reset">Reset</button>
-       powersaving mode is <span id="power-saving-status">on</span>
+       powersaving mode is <span id="powerSavingStatus">on</span>
        <button id="powerSavingOn">Powersaving On</button>
        <button id="powerSavingOff">Powersaving Off</button>
-       <button id="energyUsage">Energy Usage</button>
      </section>
      <script src="src/thermostat.js"></script>
      <a href="http://jquery.com/">Log out</a>
